@@ -3,7 +3,7 @@
 // @namespace    https://raw.githack.com/IPv777/Ny4nc4t/master/remoteNyan.user.js
 // @version      0.8
 // @description  Charge et execute nyan.js distant
-// @author       Shuunen
+// @author       IPv7
 // @match        https://astektv.groupeastek.com/*
 // @grant        none
 // ==/UserScript==
