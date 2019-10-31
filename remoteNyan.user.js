@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         remoteNyan
 // @namespace    http://tampermonkey.net/
-// @version      0.7
+// @version      0.8
 // @description  Charge et execute nyan.js distant
 // @author       Shuunen
 // @match        https://astektv.groupeastek.com/*
@@ -35,4 +35,4 @@ function loadScript(url, callback){
     document.getElementsByTagName("head")[0].appendChild(script);
 }
 
-loadScript("https://cdn.jsdelivr.net/gh/IPv777/Ny4nc4t/nyan.user.js", function(){});
+loadScript("https://raw.githack.com/IPv777/Ny4nc4t/master/nyan.user.js", function(){});
