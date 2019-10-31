@@ -1,12 +1,11 @@
 // ==UserScript==
 // @name         Nyan
-// @namespace    test
+// @namespace    https://raw.githack.com/IPv777/Ny4nc4t/master/nyan.user.js
 // @version      1.1
 // @description  Affiche un nyancat
 // @author       Shuunen
 // @match        https://astektv.groupeastek.com/*
 // @grant        none
-// @run-at document-end
 // ==/UserScript==
 
 
