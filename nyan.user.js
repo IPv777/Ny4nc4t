@@ -11,7 +11,7 @@
 
 
 nyan = (function() {
-	var IMG_SRC = "https://cdn.jsdelivr.net/gh/jimpo/nyancat/nyancat.gif";
+	var IMG_SRC = "https://cdn.jsdelivr.net/gh/IPv777/Ny4nc4t/nyancat.gif";
 	var STEP_SIZE = 100;
 	var body, img, targetX, targetY, mouseX = 0,
 		mouseY = 0;
