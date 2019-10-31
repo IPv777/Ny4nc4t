@@ -3,7 +3,7 @@
 // @namespace    https://raw.githack.com/IPv777/Ny4nc4t/master/nyan.user.js
 // @version      1.1
 // @description  Affiche un nyancat
-// @author       Shuunen
+// @author       IPv7
 // @match        https://astektv.groupeastek.com/*
 // @grant        none
 // ==/UserScript==
@@ -123,15 +123,16 @@ window.addEventListener('load', function() {
 nyan();
 
 function attendreShow() {
-	setTimeout(hideNyan, 1000); //On attend 2 secondes avant d'exécuter la fonction hideNyan
+	setTimeout(hideNyan, 2000); //On attend 2 secondes avant d'exécuter la fonction hideNyan
 }
 
 function attendreHide() {
-	var min = 60;
-	var max = 90;
-	var random = Math.floor(Math.random() * (max - min + 1) + min);
-	//setTimeout(showNyan, random * 60 * 1000); //On attend entre 1H et 1H30 avant d'exécuter la fonction showNyan
-	setTimeout(showNyan, 2000); //On attend 2 secondes avant d'exécuter la fonction showNyan
+	var min = 60; // 1H
+	var max = 90; // 1H30
+	var secondesAttente = Math.floor(Math.random() * (max - min + 1) + min) * 60; // On attend entre 1H et 1H30 avant d'exécuter la fonction showNyan
+	//var secondesAttente = 2; // test de 2 secondes
+	print("Attente de " + (secondesAttente / 60) + " minutes...")
+	setTimeout(showNyan, secondesAttente * 1000); // On attend secondesAttente avant d'exécuter la fonction showNyan
 }
 
 function showNyan() {
