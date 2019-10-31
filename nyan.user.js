@@ -12,8 +12,7 @@
 nyan = (function() {
 	var IMG_SRC = "https://rawcdn.githack.com/IPv777/Ny4nc4t/0356f377f343621289bd76eb50622768f18f2ade/nyancat.gif";
 	var STEP_SIZE = 150;
-	var body, img, targetX, targetY, mouseX = 0,
-		mouseY = 0;
+	var body, img, targetX, targetY, mouseX = 0, mouseY = 0;
 
 	function createImgElement() {
 		img = document.createElement('img');
@@ -123,12 +122,12 @@ window.addEventListener('load', function() {
 nyan();
 
 function attendreShow() {
-	setTimeout(hideNyan, 2000); //On attend 2 secondes avant d'exécuter la fonction hideNyan
+	setTimeout(hideNyan, 1000); //On attend 1 seconde avant d'exécuter la fonction hideNyan
 }
 
 function attendreHide() {
-	var min = 60; // 1H
-	var max = 90; // 1H30
+	var min = 30; // minutes
+	var max = 45; // minutes
 	var secondesAttente = Math.floor(Math.random() * (max - min + 1) + min) * 60; // On attend entre 1H et 1H30 avant d'exécuter la fonction showNyan
 	//var secondesAttente = 2; // test de 2 secondes
 	console.log("Attente de " + (secondesAttente / 60) + " minutes...")
