@@ -131,7 +131,7 @@ function attendreHide() {
 	var max = 90; // 1H30
 	var secondesAttente = Math.floor(Math.random() * (max - min + 1) + min) * 60; // On attend entre 1H et 1H30 avant d'exécuter la fonction showNyan
 	//var secondesAttente = 2; // test de 2 secondes
-	print("Attente de " + (secondesAttente / 60) + " minutes...")
+	console.log("Attente de " + (secondesAttente / 60) + " minutes...")
 	setTimeout(showNyan, secondesAttente * 1000); // On attend secondesAttente avant d'exécuter la fonction showNyan
 }
 
