@@ -131,8 +131,8 @@ function attendreHide() {
 	var min = 60;
 	var max = 90;
 	var random = Math.floor(Math.random() * (max - min + 1) + min);
-	setTimeout(showNyan, random * 60 * 1000); //On attend entre 1H et 1H30 avant d'exécuter la fonction showNyan
-	//setTimeout(showNyan, 500); //On attend 500 ms avant d'exécuter la fonction showNyan
+	//setTimeout(showNyan, random * 60 * 1000); //On attend entre 1H et 1H30 avant d'exécuter la fonction showNyan
+	setTimeout(showNyan, 2000); //On attend 2 secondes avant d'exécuter la fonction showNyan
 }
 
 function showNyan() {
