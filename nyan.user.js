@@ -10,8 +10,8 @@
 
 
 nyan = (function() {
-	var IMG_SRC = "https://cdn.jsdelivr.net/gh/IPv777/Ny4nc4t/nyancat.gif";
-	var STEP_SIZE = 100;
+	var IMG_SRC = "https://rawcdn.githack.com/IPv777/Ny4nc4t/0356f377f343621289bd76eb50622768f18f2ade/nyancat.gif";
+	var STEP_SIZE = 150;
 	var body, img, targetX, targetY, mouseX = 0,
 		mouseY = 0;
 
@@ -123,7 +123,7 @@ window.addEventListener('load', function() {
 nyan();
 
 function attendreShow() {
-	setTimeout(hideNyan, 2000); //On attend 2 secondes avant d'exécuter la fonction hideNyan
+	setTimeout(hideNyan, 1000); //On attend 2 secondes avant d'exécuter la fonction hideNyan
 }
 
 function attendreHide() {
